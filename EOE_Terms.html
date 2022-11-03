@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EOE Applications</title>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script type="text/javascript"> 
+      function popup(mylink, windowname) { 
+        if (! window.focus)return true; 
+        var href; 
+        if (typeof(mylink) == 'string') href=mylink; 
+        else href=mylink.href; 
+        window.open(href, windowname, 'width=400,height=200,scrollbars=yes'); 
+        return false; } 
+    </script>
+
+    <script type="text/javascript">
+      google.charts.load('current', {packages:["orgchart"]});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Name');
+        data.addColumn('string', 'Manager');
+        data.addColumn('string', 'ToolTip');
+
+        // For each orgchart box, provide the name, manager, and tooltip to show.
+        data.addRows([
+
+          [{'v':'EOE Applications', 'f':'EOE Applications<div style="color:red; font-style:italic">06/29/2022</div>'},
+           '', ''],
+
+
+          ['BRC Navigator Applications' ,'EOE Applications', 'EEC BRC Navigator Technical'],
+          ['CCFA Child Care Financial Assistance' ,'EOE Applications', 'EECIT Service Desk'],
+          ['CSEOYFR Charter School End of Year Financial Report' ,'EOE Applications', 'EOE Applications'],
+          ['CVTE Career Vocational Tech Ed' ,'EOE Applications', 'EOE Applications'],
+          ['DA Directory Administration' ,'EOE Applications', 'EOE Directory Administration'],
+          ['Data Collection' ,'EOE Applications', 'EOE Applications'],
+          ['DropBox' ,'EOE Applications', 'EOE Systems Engineering'],
+          ['EDWIN' ,'EOE Applications', 'EOE Edwin Analytics'],
+          ['EEC Data Hosting and Reports' ,'EOE Applications', 'EECIT Service Desk'],
+          ['ELAR Educator Licensure and Renewal' ,'EOE Applications', 'EOE ELAR - Technical'],
+          ['HEIRS' ,'EOE Applications', 'EOE DHE Application Support'],
+          ['Kinderwait' ,'EOE Applications', 'EECIT Service Desk'],
+          ['MassAid' ,'EOE Applications', 'EOE DHE Application Support'],
+          ['MCAS Massachusetts Comprehensive Assessment System' ,'EOE Applications', 'EOE Applications'],
+          ['Nutrition' ,'EOE Applications', 'EOE DESE Applications'],
+          ['OSFA' ,'EOE Applications', 'EOE DHE Application Support'],
+          ['School and District Profiles' ,'EOE Applications', 'EOE Applications'],
+          ['SIF Schools Interoperability Framework' ,'EOE Applications', 'EOE SIF Support'],
+          ['SIMS Student Information Management System' ,'EOE Applications', 'EOE SIF Support'],
+          ['Single Sign In' ,'EOE Applications', 'EECIT Service Desk'],
+          ['Single Sign In' ,'EOE Applications', 'EECIT Service Desk'],
+
+
+
+         ['BMMS Board Member Management System', 'EOE Applications', 'EOE Applications'],
+         ['BigChex Service Bureau', 'BRC Navigator Applications' ,'EEC BRC Navigator Technical'],
+         ['BRC Legacy Archive Viewer', 'BigChex Service Bureau' ,'EEC BRC Navigator Technical'],
+         ['DCF Search', 'BRC Legacy Archive Viewer' ,'EEC BRC Navigator Technical'],
+         ['Viewer', 'DCF Search' ,'EEC BRC Navigator Technical'],
+         ['CAP Candidate Assessment Performance', 'EOE Applications', 'EOE CAP Online Platform-Technical Issues'],
+         ['CCFA', 'CCFA Child Care Financial Assistance' ,'EECIT Service Desk'],
+         ['CCFA Gateway', 'CCFA' ,'EECIT Service Desk'],
+         ['Centralized Clinical Placement', 'EOE Applications', 'EOE DHE Application Support'],
+         ['Conference Admin', 'EOE Applications', 'EOE Web Administration'],
+         ['CoreWS', 'EOE Applications', 'EOE Applications'],
+         ['CSEOYFR Admin', 'CSEOYFR Charter School End of Year Financial Report' ,'EOE Applications'],
+         ['CSEOYFR Amendment Application', 'CSEOYFR Admin' ,'EOE Applications'],
+         ['Curriculum Frameworks Maintenance Tool', 'EOE Applications', 'EOE Applications'],
+         ['CVTE Admin', 'CVTE Career Vocational Tech Ed' ,'EOE Applications'],
+         ['CVTE Grad Follow-up Results', 'CVTE Admin' ,'EOE Applications'],
+         ['CVTE Reports', 'CVTE Grad Follow-up Results' ,'EOE Applications'],
+         ['DA - Administrative Tools', 'DA Directory Administration' ,'EOE Directory Administration'],
+         ['DA DIMS', 'DA - Administrative Tools' ,'EOE Directory Administration'],
+         ['DA MCAS Shipping List', 'DA DIMS' ,'EOE Directory Administration'],
+         ['DA MORPHO', 'DA MCAS Shipping List' ,'EOE Directory Administration'],
+         ['DA Web Services', 'DA MORPHO' ,'EOE Directory Administration'],
+         ['(NORD) Neglected or Delinquent Reports', 'Data Collection' ,'EOE Applications'],
+         ['(SAC) School Attending Children Admin', '(NORD) Neglected or Delinquent Reports' ,'ESE Data Collections'],
+         ['21st CCLC', '(SAC) School Attending Children Admin' ,'EOE DESE Applications'],
+         ['21st CCLC ADMIN', '21st CCLC' ,'EOE Applications'],
+         ['Academic Support Admin', '21st CCLC ADMIN' ,'EOE Applications'],
+         ['Academic Support Student Data', 'Academic Support Admin' ,'EOE DESE Applications'],
+         ['Anti-Hazing', 'Academic Support Student Data' ,'EOE Applications'],
+         ['Anti-Hazing Admin', 'Anti-Hazing' ,'EOE Applications'],
+         ['Application Metadata', 'Anti-Hazing Admin' ,'EOE Applications'],
+         ['Charter and Virtual School Admin', 'Application Metadata' ,'EOE Applications'],
+         ['Charter and Virtual School Pre-Enrollment', 'Charter and Virtual School Admin' ,'EOE Applications'],
+         ['Charter School Significant Expansion', 'Charter and Virtual School Pre-Enrollment' ,'EOE Applications'],
+         ['Competency Determination', 'Charter School Significant Expansion' ,'EOE Applications'],
+         ['Competency Determination Admin', 'Competency Determination' ,'EOE Applications'],
+         ['Coronavirus Case Collection', 'Competency Determination Admin' ,'EOE Applications'],
+         ['Data Collection Dashboard', 'Coronavirus Case Collection' ,'EOE Applications'],
+         ['Displaced Students Admin', 'Data Collection Dashboard' ,'EOE DESE Applications'],
+         ['Duplicate Students', 'Displaced Students Admin' ,'EOE Applications'],
+         ['End of Year Amendments', 'Duplicate Students' ,'EOE Applications'],
+         ['Federal Time and Attendance', 'End of Year Amendments' ,'EOE Applications'],
+         ['Homeless and Foster Care Students', 'Federal Time and Attendance' ,'EOE Applications'],
+         ['Neglected or Delinquent Admin', 'Homeless and Foster Care Students' ,'EOE Applications'],
+         ['Non-Public School Report', 'Neglected or Delinquent Admin' ,'EOE Applications'],
+         ['NPSR Admin', 'Non-Public School Report' ,'EOE Applications'],
+         ['Restraint Data', 'NPSR Admin' ,'EOE Applications'],
+         ['Restraint Data Admin', 'Restraint Data' ,'EOE Applications'],
+         ['School Attending Children', 'Restraint Data Admin' ,'EOE Applications'],
+         ['Title I Data', 'School Attending Children' ,'EOE Applications'],
+         ['TITLEIADMIN', 'Title I Data' ,'EOE Applications'],
+         ['DESE Search (by Coveo)', 'EOE Applications', 'EOE Web Administration'],
+         ['DESE Website', 'EOE Applications', 'EOE Web Administration'],
+         ['DEV/QA/PROD', 'EOE Applications', 'EOE Systems Engineering'],
+         ['DHE External Website', 'EOE Applications', 'EOE DHE Application Support'],
+         ['DropBox Central', 'DropBox' ,'EOE Systems Engineering'],
+         ['DropBox File Administration', 'DropBox Central' ,'EOE Systems Engineering'],
+         ['DropBox Status', 'DropBox File Administration' ,'EOE Systems Engineering'],
+         ['EDU News', 'EOE Applications', 'EOE Web Administration'],
+         ['Educator Investigations', 'EOE Applications', 'EOE Educator Investigations'],
+         ['EDWIN', 'EDWIN' ,'EOE Edwin Analytics'],
+         ['EDWIN Analytics/Training', 'EDWIN' ,'EOE Edwin Analytics'],
+         ['EDWIN SASID API', 'EDWIN Analytics/Training' ,'EECIT Service Desk'],
+         ['CCIMS DB Compatibility', 'EEC Data Hosting and Reports' ,'EECIT Service Desk'],
+         ['Data Warehouse for CCFA and ECIS', 'EOE Applications' ,'EECIT Service Desk'],
+         ['ECIS Early Childhood Information System Datamart', 'CCIMS DB Compatibility' ,'EECIT Service Desk'],
+         ['ECIS Early Childhood Information System Transfer', 'Data Warehouse for CCFA and ECIS' ,'EECIT Service Desk'],
+         ['EECDW Early Education Data Warehouse', 'ECIS Early Childhood Information System Datamart' ,'EECIT Service Desk'],
+         ['LEAD_Integration', 'ECIS Early Childhood Information System Transfer' ,'EECIT Service Desk'],
+         ['Report Writer', 'EECDW Early Education Data Warehouse' ,'EECIT Service Desk'],
+         ['SASIDEXCHANGE', 'LEAD_Integration' ,'EECIT Service Desk'],
+         ['ELAR', 'ELAR Educator Licensure and Renewal' ,'EOE ELAR - Technical'],
+         ['ELAR Reports', 'ELAR' ,'EOE ELAR - Technical'],
+         ['ELARBATCH', 'ELAR Reports' ,'EOE ELAR - Technical'],
+         ['EOE Authorization', 'EOE Applications', 'EOE Systems Engineering'],
+         ['File Loader', 'EOE Applications', 'EOE Applications'],
+         ['GPSTEM Tableau Reports', 'EOE Applications', 'EOE DHE Application Support'],
+         ['Grantium/EDGrants', 'EOE Applications', 'EOE DHE Application Support'],
+         ['HEIRS Admin Logs', 'HEIRS' ,'EOE DHE Application Support'],
+         ['HEIRS Budget Data Collection', 'HEIRS Admin Logs' ,'EOE DHE Application Support'],
+         ['HEIRS Enrollment', 'HEIRS Budget Data Collection' ,'EOE DHE Application Support'],
+         ['HEIRS Financial Statement Update', 'HEIRS Enrollment' ,'EOE DHE Application Support'],
+         ['HEIRS Fiscal Measures', 'HEIRS Financial Statement Update' ,'EOE DHE Application Support'],
+         ['HEIRS Program Inventory', 'HEIRS Fiscal Measures' ,'EOE DHE Application Support'],
+         ['HEIRS Scheduled Tasks', 'HEIRS Program Inventory' ,'EOE DHE Application Support'],
+         ['HEIRS Tuition and Fees', 'HEIRS Scheduled Tasks' ,'EOE DHE Application Support'],
+         ['Homeless and Foster Care Students', 'EOE Applications', 'EOE SIF Support'],
+         ['Improper Payment', 'EOE Applications', 'EECIT Service Desk'],
+         ['Kinderwait', 'Kinderwait' ,'EECIT Service Desk'],
+         ['Kinderwait Web Service', 'Kinderwait' ,'EECIT Service Desk'],
+         ['LEAD', 'EOE Applications', 'EECIT Service Desk'],
+         ['Literacy Pro', 'EOE Applications', 'EOE DESE Applications'],
+         ['Commonwealth Commitment Scholarship Program', 'MassAid' ,'EOE DHE Application Support'],
+         ['John and Abigail Adams Scholarship Program', 'Commonwealth Commitment Scholarship Program' ,'EOE DHE Application Support'],
+         ['MASSAID', 'John and Abigail Adams Scholarship Program' ,'EOE DHE Application Support'],
+         ['Public Service Grant Program', 'MASSAID' ,'EOE DHE Application Support'],
+         ['REFUND Worksheet', 'Public Service Grant Program' ,'EOE DHE Application Support'],
+         ['MassTeach', 'EOE Applications','EOE DHE Application Support'],
+         ['MassTransfer', 'EOE Applications' ,'EOE DHE Application Support'],
+         ['MCAS Appeals', 'MCAS Massachusetts Comprehensive Assessment System' ,'EOE Applications'],
+         ['MCAS Appeals Admin', 'MCAS Appeals' ,'EOE Applications'],
+         ['MCAS Search', 'MCAS Appeals Admin' ,'EOE Applications'],
+         ['MMARS', 'EOE Applications', 'EOE Applications'],
+         ['Network Services', 'EOE Applications', 'EOE Network & Server'],
+         ['Nutrition', 'Nutrition' ,'EOE DESE Applications'],
+         ['Nutrition Admin Applications', 'Nutrition' ,'EOE Applications'],
+         ['ODI Validations Service', 'EOE Applications', 'EOE SIF Support'],
+         ['Gear Up', 'OSFA' ,'EOE DHE Application Support'],
+         ['OWSMONITOR', 'Gear Up' ,'EOE DHE Application Support'],
+         ['OWSREG', 'OWSMONITOR' ,'EOE DHE Application Support'],
+         ['PCIPP', 'OWSREG' ,'EOE DHE Application Support'],
+         ['Phonebook Admin', 'EOE Applications', 'EOE Applications'],
+         ['PMRS Performance Measurement Reporting System', 'EOE Applications', 'EOE DHE Application Support'],
+         ['RPMS Retirement Planning Management System or ORP2020', 'EOE Applications', 'EOE DHE Application Support'],
+         ['RRT Research and Reporting Tool', 'EOE Applications', 'EOE DHE Application Support'],
+         ['SBS School Business Service', 'EOE Applications', 'EOE DESE Applications'],
+         ['Profiles Admin', 'School and District Profiles' ,'EOE Applications'],
+         ['School and District Profiles', 'Profiles Admin' ,'EOE Applications'],
+         ['School and District Report Cards', 'EOE Applications' ,'EOE Applications'],
+         ['SharePoint', 'EOE Applications', 'EOE SharePoint'],
+         ['Case Manager', 'SIF Schools Interoperability Framework' ,'EOE SIF Support'],
+         ['Data Collections Service', 'Case Manager' ,'EOE SIF Support'],
+         ['EPIMS', 'Data Collections Service' ,'EOE SIF Support'],
+         ['EPIMS Admin', 'EPIMS' ,'EOE SIF Support'],
+         ['MSR', 'EPIMS Admin' ,'EOE SIF Support'],
+         ['P-EBT Pandemic EBT', 'MSR' ,'EOE SIF Support'],
+         ['Publish Manager', 'P-EBT Pandemic EBT' ,'EOE SIF Support'],
+         ['SCS Student Course Schedule', 'Publish Manager' ,'EOE SIF Support'],
+         ['SIF Messaging', 'SCS Student Course Schedule' ,'EOE SIF Support'],
+         ['SIF Reports', 'SIF Messaging' ,'EOE SIF Support'],
+         ['SIF Transmission Reports', 'SIF Reports' ,'EOE SIF Support'],
+         ['SIFODI Extracts, Validations and Data Feeds', 'SIF Transmission Reports' ,'EOE SIF Support'],
+         ['SSDR School Safety Discipline Report', 'SIFODI Extracts, Validations and Data Feeds' ,'EOE SIF Support'],
+         ['SSR Single Student Registration', 'SSDR School Safety Discipline Report' ,'EOE SIF Support'],
+         ['SWAP SADID', 'SSR Single Student Registration' ,'EOE SIF Support'],
+         ['SIMS Utilities', 'SIMS Student Information Management System' ,'EOE SIF Support'],
+         ['SIMS/SIMS-DC', 'SIMS Utilities' ,'EOE SIF Support'],
+         ['SIMSREPORT', 'SIMS/SIMS-DC' ,'EOE SIF Support'],
+         ['EEC Single Sign On Admin Utility', 'Single Sign In' ,'EECIT Service Desk'],
+         ['Single Sign On Web Service', 'EEC Single Sign On Admin Utility' ,'EECIT Service Desk'],
+         ['SRF Spending Request Form', 'EOE Applications', 'EECIT Service Desk'],
+         ['Standards Navigator', 'EOE Applications', 'EOE Applications'],
+         ['Student Claiming', 'EOE Applications', 'EOE Applications'],
+         ['WBMS', 'EOE Applications', 'EOE Systems Engineering'],
+        ]);
+
+        // Create the chart.
+        var chart = new google.visualization.OrgChart(document.getElementById('chart_div'));
+
+        function selectHandler() {
+          var selectedItem = chart.getSelection()[0];
+          if (selectedItem) {
+            var name = data.getValue(selectedItem.row, 0);
+            var tooltip = data.getValue(selectedItem.row, 2);
+            alert('Escalate to: ' + tooltip);
+          }
+        }
+
+        // Draw the chart, setting the allowHtml option to true for the tooltips.
+        google.visualization.events.addListener(chart, 'select', selectHandler);
+        chart.draw(data, {'allowHtml':true});
+      }
+    </script>
+  </head>
+  <body>
+    <div id="chart_div"></div>
+  </body>
+</html>
